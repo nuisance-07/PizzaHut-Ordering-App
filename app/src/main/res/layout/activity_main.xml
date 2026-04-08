@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/standard_padding">
+
+        <!-- Banner Image -->
+        <ImageView
+            android:id="@+id/imgBanner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pizzahut_banner"
+            android:contentDescription="@string/app_name"
+            android:layout_marginBottom="@dimen/header_margin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_msg"
+            android:textSize="@dimen/text_size_header"
+            android:textStyle="bold"
+            android:textColor="@color/pizza_hut_red"
+            android:layout_marginBottom="@dimen/standard_padding" />
+
+        <!-- Pizza Size Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pizza_size_title"
+            android:textSize="@dimen/text_size_sub"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/header_margin"
+            android:padding="8dp"
+            android:background="@android:color/white"
+            android:elevation="2dp">
+
+            <RadioButton
+                android:id="@+id/rbSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/size_small"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/rbMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/size_medium"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/rbLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/size_large"
+                android:padding="12dp" />
+        </RadioGroup>
+
+        <!-- Toppings Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toppings_title"
+            android:textSize="@dimen/text_size_sub"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/header_margin"
+            android:padding="8dp"
+            android:background="@android:color/white"
+            android:elevation="2dp">
+
+            <CheckBox
+                android:id="@+id/cbCheese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/topping_cheese"
+                android:padding="12dp" />
+
+            <CheckBox
+                android:id="@+id/cbOlives"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/topping_olives"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="@dimen/header_margin">
+
+            <Button
+                android:id="@+id/btnCompute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_compute"
+                android:backgroundTint="@color/pizza_hut_red"
+                android:textColor="@color/white"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_clear"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- Total Price Display -->
+        <TextView
+            android:id="@+id/tvTotalLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_label"
+            android:textSize="@dimen/text_size_sub"
+            android:textAlignment="center"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="R0.00"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/pizza_hut_red"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+</ScrollView>

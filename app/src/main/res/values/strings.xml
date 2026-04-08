@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pizza Hut Ordering</string>
+    <string name="welcome_msg">Order Your Favorite Pizza</string>
+    <string name="pizza_size_title">Select Pizza Size</string>
+    <string name="size_small">Small — R55.99</string>
+    <string name="size_medium">Medium — R89.99</string>
+    <string name="size_large">Large — R119.99</string>
+    <string name="toppings_title">Select Optional Toppings</string>
+    <string name="topping_cheese">Extra Cheese — R5.50</string>
+    <string name="topping_olives">Olives — R3.50</string>
+    <string name="btn_compute">Compute</string>
+    <string name="btn_clear">Clear</string>
+    <string name="total_label">Total Price:</string>
+    <string name="error_select_size">Please select a pizza size first!</string>
+</resources>
