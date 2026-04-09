@@ -23,8 +23,8 @@ A native Android application built in Kotlin that allows users to order pizzas f
 4. View logs in the **Logcat** window by filtering for the tag: `PizzaHutOrdering`.
 
 ## Screenshots
-[PLACEHOLDER: Add App Screenshot 1 Here]
-[PLACEHOLDER: Add App Screenshot 2 Here]
+![App Screenshot 1](pictures/screenshot1.png)
+![App Screenshot 2](pictures/screenshot2.png)
 
 ## Technical Specifications
 - **Language**: Kotlin 1.9.0
